@@ -1,0 +1,24 @@
+# include<stdio.h>
+Int main
+{
+Int windowsize,sent=0,ack,i;
+Printf("enter the window size/n")
+Scanf("%d",& windowsize);
+for(i=0;I<windowsize;i++)
+{
+printf(" frame %d has been transmitted/n",sent);
+sent++
+if (sent==windowsize)
+break
+}
+while (1)
+{
+printf("/n please enter the frame number (ack not received/n");
+scanf("%d",&ack);
+If (ack>windowsize)
+printf("invalid frame number");
+else
+printf("%d is transmitted",ack);
+}
+return 0;
+}
